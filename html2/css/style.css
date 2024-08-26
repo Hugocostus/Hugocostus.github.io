@@ -1,0 +1,70 @@
+/* Apply styles to the body element */
+body {
+  font-family: Arial, sans-serif; /* Replace with your desired font-family */
+  font-size: 16px; /* Replace with your desired font-size */
+}
+
+/* Style for the header element */
+header {
+  background-color: #f0f0f0; /* Replace with your desired background color */
+}
+
+/* Style for the nav element */
+nav {
+    background-color: #333; /* Background color for the nav */
+    display: flex; /* Enable Flexbox layout */
+    justify-content: space-around; /* Distribute space evenly between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 0; /* Add some padding for spacing */
+  }
+  
+  /* Style for the list items inside nav */
+  nav ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make the list a flex container */
+    width: 100%; /* Full width of the nav */
+    justify-content: space-around; /* Distribute list items evenly */
+  }
+  
+  /* Style for the list items */
+  nav li {
+    margin: 0 10px; /* Add some margin for spacing between items */
+  }
+  
+  /* Style for the links inside the nav */
+  nav a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add padding around the text */
+    display: block; /* Make the link a block-level element */
+  }
+/* Style for the main element */
+main {
+  background-color: #fff; /* Replace with your desired background color */
+  font-size: 18px; /* Replace with your desired font-size */
+}
+
+/* Style for the footer element */
+footer {
+  background-color: #ccc; /* Replace with your desired background color */
+}
+
+/* Style for list items */
+li {
+  display: list-item; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
+}
+
+/* Style for h1 elements */
+h1 {
+  text-align: center; /* Replace with your desired text alignment */
+  font-family: 'Times New Roman', serif; /* Replace with your desired font-family */
+  color: #333; /* Replace with your desired color */
+}
+
+/* Style for p elements */
+p {
+  line-height: 1.6; /* Replace with your desired line-height */
+}
