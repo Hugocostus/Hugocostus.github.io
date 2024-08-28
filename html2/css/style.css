@@ -1,0 +1,99 @@
+/* Apply styles to the body element */
+body {
+  font-family: Arial, sans-serif; /* Replace with your desired font-family */
+  font-size: 16px; /* Replace with your desired font-size */
+}
+
+/* Style for the header element */
+header {
+  background-color: #f0f0f0; /* Replace with your desired background color */
+}
+
+/* Style for the nav element */
+nav {
+  background-color: #333; /* Background color for the nav */
+  display: inline-block; /* Changed from flex to inline-block */
+  width: 80%; /* Set width to 80% */
+  padding: 10px 0; /* Add some padding for spacing */
+}
+
+/* Style for the list items inside nav */
+nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Make the list a flex container */
+  width: 100%; /* Full width of the nav */
+  justify-content: space-around; /* Distribute list items evenly */
+}
+
+/* Style for the list items */
+nav li {
+  margin: 0 10px; /* Add some margin for spacing between items */
+  /* Commented out */
+  /* display: list-item; */ 
+  /* width: 100%; */
+}
+
+/* Style for the links inside the nav */
+nav a {
+  color: #fff; /* Text color for links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 5px 10px; /* Add padding around the text */
+  display: block; /* Make the link a block-level element */
+}
+
+/* Style for images inside nav */
+nav img {
+  width: 10%; /* Set width to 10% */
+  position: relative; /* Optional for specific look */
+  top: 20px; /* Optional for specific look */
+}
+
+/* Style for the main element */
+main {
+  background-color: #fff; /* Replace with your desired background color */
+  font-size: 18px; /* Replace with your desired font-size */
+}
+
+/* Style for the footer element */
+footer {
+  background-color: #ccc; /* Replace with your desired background color */
+}
+
+/* Style for the grid class */
+.grid {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(2, 40%); /* Two columns, each approximately 40% */
+  gap: 10px; /* Adjust gap between items */
+}
+
+/* Style for images inside the grid class */
+.grid img {
+  width: 100%; /* Make images take full width of the grid cell */
+}
+
+/* Additional styling for the grid class */
+.grid {
+  justify-content: center; /* Adjust alignment of the grid items */
+  align-items: center; /* Adjust alignment of grid items in the cross-axis */
+}
+
+/* Style for the flex class */
+.flex {
+  display: flex; /* Enable Flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: space-around; /* Distribute space evenly between items */
+}
+
+/* Style for h1 elements */
+h1 {
+  text-align: center; /* Replace with your desired text alignment */
+  font-family: 'Times New Roman', serif; /* Replace with your desired font-family */
+  color: #333; /* Replace with your desired color */
+}
+
+/* Style for p elements */
+p {
+  line-height: 1.6; /* Replace with your desired line-height */
+}
