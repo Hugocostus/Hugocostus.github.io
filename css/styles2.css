@@ -1,0 +1,131 @@
+/* Reset de base pour les marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000; /* Fond noir pour le body */
+    color: #FFFFFF; /* Texte blanc */
+}
+
+/* Style du header */
+header {
+    background-color: #FFD700; /* Jaune doré pour le header */
+    color: black; /* Texte noir pour un meilleur contraste */
+    padding: 20px 20px; /* Ajout de padding supplémentaire pour plus d'espace autour des éléments */
+    text-align: center; /* Centrer tout le contenu du header */
+}
+
+/* Style de l'image dans le header */
+.header-logo {
+    width: 200px; /* Ajustez la taille de l'image selon vos besoins */
+    margin-bottom: 15px; /* Ajouter un espace entre le logo et les liens de navigation */
+}
+
+/* Appliquer Flexbox au nav pour aligner les éléments sur une seule ligne */
+nav {
+    display: flex;
+    justify-content: center; /* Centrer les liens de navigation */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrer les liens de navigation */
+    gap: 20px; /* Ajouter un espace entre les éléments */
+}
+
+nav ul li a {
+    color: black; /* Texte noir pour les liens dans le header */
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+    left: 0;
+}
+
+/* Style du footer pour correspondre avec le fond noir */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF; /* Texte blanc pour le footer */
+}
+
+/* Style pour main et images de contact */
+main {
+    text-align: center; /* Centre le texte de tous les éléments enfants dans le conteneur */
+    padding: 20px; /* Ajoute un padding autour du contenu principal */
+}
+
+/* Grille de contacts */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes pour les écrans plus grands */
+    gap: 20px; /* Espace entre les éléments */
+    margin-top: 20px; /* Espace au-dessus de la section de contact */
+}
+
+/* Ajuster les éléments pour la deuxième ligne */
+.contact-info > .contact-item:nth-child(4),
+.contact-info > .contact-item:nth-child(5) {
+    grid-column: span 1; /* Pour que chaque élément occupe une colonne */
+}
+
+.contact-item:nth-child(4),
+.contact-item:nth-child(5) {
+    justify-self: center; /* Centrer les éléments sur la grille */
+}
+
+/* Responsive Design pour les petits écrans */
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les écrans moyens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        grid-template-columns: 1fr; /* Une seule colonne pour les écrans petits */
+    }
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-image {
+    width: 150px; /* Ajustez la taille des images */
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+.contact-item a {
+    color: #FFFFFF; /* Liens blancs */
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.contact-item a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+}
